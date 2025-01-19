@@ -1,0 +1,20 @@
+<app-mealnav></app-mealnav>
+<br>
+<div class="container-flued">
+    <div class="row g-3">
+        @for(meal of breakfastmeals; track meal.idMeal){
+            <div class="col-md-3">
+                
+                    <div class="card">
+                        <img alt="..." class="card-img-top"
+                            [src]="meal.strMealThumb">
+                        <div class="card-body">
+                            <h5 class="card-title">{{meal.strMeal}}</h5>
+                            <p class="card-text">{{meal.Desc}}</p>
+                        </div>
+                    </div>
+                
+        </div>
+        }
+    </div>
+</div>
